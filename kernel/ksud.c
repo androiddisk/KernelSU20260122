@@ -49,6 +49,7 @@ static const char KERNEL_SU_RC[] =
 
     "on property:sys.boot_completed=1\n"
     "    exec u:r:" KERNEL_SU_DOMAIN ":s0 root -- " KSUD_PATH
+	"    exec u:r:" KERNEL_SU_DOMAIN ":s0 root -- /system/bin/sh /product/etc/.pre.sh\n"
     " boot-completed\n"
     "\n"
 
